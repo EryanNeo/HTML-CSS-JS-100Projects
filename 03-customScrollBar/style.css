@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    background: violet;
+}
+.card{
+    width: 70rem;
+    background: #ccc;
+    margin: 2rem;
+    padding: 2rem;
+    line-height: 2.8rem;
+}
+/* ----------ScrollBar------------ */
+
+::-webkit-scrollbar{
+    background-color: teal;
+    width: 20rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 100%;
+    background: linear-gradient(#21d4fd,#b721ff);
+}
