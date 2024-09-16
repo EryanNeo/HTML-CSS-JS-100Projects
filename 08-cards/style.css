@@ -1,0 +1,125 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root{
+font-size: 10px;
+}
+body{
+    display: flex;
+    /* flex-direction: column; */
+    background: rgb(10,10,10);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+}
+.card-container-1{
+    position: relative;
+    width: 32rem;
+    padding: 4rem;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 15vh;
+    margin-top: 5vh;
+}
+.card-container-1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: calc((-100% + 5px));
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    z-index: 1;
+    transition: 1s;
+}
+.card-container-1:hover::before{
+    bottom: 0;
+}
+.content{
+    position: relative;
+    color: #000;
+    z-index: 2;
+    transition: 1s;
+}
+.card-container-1 h2{
+    font-size: 3rem;
+}
+.card-container-1 p{
+    line-height: 2.5rem;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+.card-container-1 a{
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    background-color: rgb(22,7,35);
+}
+.card-container-1:hover .content{
+    color: #fff;
+}
+.card-container-2{
+    position: relative;
+    width: 32rem;
+    height: 30rem;
+    background-color: white;
+    box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.5);
+}
+.card-container-2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-container-2::before,
+.card-container-2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: 1s;
+    z-index: -1;
+}
+.card-container-2:hover::after{
+    transform: rotate(20deg);
+    box-shadow: 0 0.2rem 2rem rgba(0,0,0,0.2);
+}
+.card-container-2:hover::before{
+    transform: rotate(10deg);
+    box-shadow: 0 0.2rem 2rem rgba(0,0,0,0.2);
+}
+.card-container-2 .img-box{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    background: #222;
+    transition: 1s;
+    z-index: 2;
+}
+.card-container-2:hover .img-box{
+    bottom:8rem;
+}
+.card-container-2 .details{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    height: 6rem;
+    text-align: center;
+}
+.card-container-2 h2{
+    font-size: 5rem;
+    background: blueviolet;
+}
