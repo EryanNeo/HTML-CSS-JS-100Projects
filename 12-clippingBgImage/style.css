@@ -1,0 +1,26 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root{
+font-size: 10px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #000;
+    /* color: white; */
+}
+h1{
+    font-size: 20rem;
+    font-weight: 900;
+    background:url(a.jpg) ;
+    background-size: cover;
+    -webkit-background-clip: text;
+    color:transparent;
+    font-family: sans-serif;
+}
