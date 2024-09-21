@@ -1,0 +1,51 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root{
+font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: black;
+}
+.main{
+    padding: 0.5rem 0;
+    text-align: center;
+}
+input{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+.inputs input{
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 5rem;
+    outline: none;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#selectOp{
+    margin-top: 1rem;
+    padding: 1rem;
+    outline: none;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#btn{
+    border: none;
+    background: transparent;
+    padding: 1rem 2rem;
+    border: 0.2rem solid white;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bolder;
+}
