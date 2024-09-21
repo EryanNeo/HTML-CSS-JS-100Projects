@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+    --modal-duration:1s;
+}
+body{
+    font-size: 1.6rem;
+    transition: transform 0.3s ease;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(a.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content-container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+.content-container h1{
+    font-size: 4rem;
+    color: #fff;
+}
+.content-container p{
+    color: #fff;
+    width: 60rem;
+    text-align: center;
+    margin: 4rem 0; 
+    line-height: 2.4rem;
+}
+.cta-btn{
+    padding: 1.2rem 3rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: crimson;
+    color: #fff;
+}
+.modal-container{
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.modal{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    width: 40rem;
+}
+.modal-content{
+    padding: 2rem;
+}
+.modal-form div{
+    margin: 2rem 0;
+}
+.modal-form label{
+    display: block;
+    margin-bottom: 0.6rem;
+}
+.modal-form .form-input{
+    padding:0.8rem;
+    width: 100%;
+}
+.close-btn{
+    font-size: 2.5rem;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 0.5rem;
+    right: 1.2rem;
+    cursor: pointer;
+}
+.submit-btn{
+    padding: 1rem 3rem;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    background-color: crimson;
+    cursor: pointer;
+}
+.modal-container.show-modal{
+    display: block;
+}
