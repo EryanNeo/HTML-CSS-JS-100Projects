@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    background-color: rgb(8,8,8);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: white;
+    padding: 5rem;
+    border-radius: 0.5rem;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.special{
+    background: crimson;
+    padding: 0.5rem 2rem;
+    color: white;
+}
+.form-control{
+    position: relative;
+    margin: 2rem 0 4rem;
+    width: 30rem;
+}
+.form-control input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 0.2rem solid black;
+    display: block;
+    width: 100%;
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+    color: black;
+}
+.form-control input:focus,
+.form-control input:valid{
+    outline: 0;
+    border-bottom-color:crimson ;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    background: crimson;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    color: white;
+}
+.btn:focus{
+    outline: 0;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.form-control label{
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    pointer-events: none;
+}
+.form-control label span{
+    display: inline-block;
+    font-size: 1.8rem;
+    min-height: 0.5rem;
+    transition: 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-control input:focus + label span{
+    color: crimson;
+    transform: translateY(-3rem);
+}
