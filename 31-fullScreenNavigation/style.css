@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    color: #333;
+}
+.image-container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    width: 25rem;
+    height: 25rem;
+    margin: 2rem;
+    /* border: 0.1rem solid green; */
+}
+.img-1{
+    background: url(images/a.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img-2{
+    background: url(images/b.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    padding: 0 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    padding: 2rem 0;
+}
+article h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+}
+article p{
+    max-width: 70rem;
+    color: rgb(79,77,77);
+    padding: 1rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.25rem;
+    background-color: #5c6fda;
+    clip-path: circle(2.5rem at calc(100vw - 5vw) 3.4rem);
+    transition: clip-path 0.5s;
+}
+.menu li{
+    position: relative;
+    z-index: 5;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(46,45,45);
+    font-size: 1.725rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    width: 12rem;
+    padding: 0.5rem;
+}
+.menu .btn{
+    position: absolute;
+    top: 2rem;
+    left: calc(100vw - 5vw);
+    transform: translateX(-50%);
+}
+.btn span{
+    width: 0.75rem;
+    height: 0.75rem;
+    display: block;
+    border: 0.2rem solid white;
+    margin-bottom: 0.3rem;
+    border-radius: 50%;
+}
+.highlight{
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    background-color: white;
+    transition: transform 0.3s;
+}
