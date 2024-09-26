@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #ccef;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    padding: 6rem;
+    background-color: black;
+}
+.container h2{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    letter-spacing: 0.3rem;
+}
+.input-container input{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    outline: none;
+    letter-spacing: 0.2rem;
+}
+.btn{
+    padding: 1rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    margin: 1rem;
+}
+p{
+    /* font-weight: bold; */
+    width: 60rem;
+    background-color: #ccef;
+    height: 8rem;
+    border: 1px solid #555;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+    letter-spacing: 0.2rem;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.bold{
+    font-weight:900;
+}
+.italic{
+    font-style: italic;
+}
+.underline{
+    text-decoration: underline;
+}
+.clicked{
+    color: black;
+}
