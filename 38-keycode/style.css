@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    height: 100vh;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(blueviolet,rgb(79,21,134));
+}
+#insert{
+    background: white;
+    padding: 5rem;
+    width: 75%;
+}
+.key{
+    /* border: 1px solid gray; */
+    color: white;
+    border: none;
+    display: inline-flex;
+    font-size: 2rem;
+    padding: 2rem;
+    font-weight: bold;
+    flex-direction: column;
+    min-width: 15rem;
+    margin: 1rem;
+    position: relative;
+    background-color: rgba(137,43,226,0.767);
+}
+.key small{
+    position: absolute;
+    top: -2.4rem;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #555;
+    font-size: 1.4rem;
+    padding: 1rem;
+    background-color: blueviolet;
+    color: black;
+}
