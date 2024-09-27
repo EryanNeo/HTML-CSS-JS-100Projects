@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    min-height: 100vh;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:7rem;
+}
+.container{
+    background-color: #fff;
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+    width: 50%;
+}
+header h2{
+    font-size: 3rem;
+}
+.para{
+    margin-top: 1.2rem;
+    font-size: 1.8rem;
+}
+.content-2{
+    display: none;
+}
+.elipses{
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+}
+.elipses.toggle1{
+    display: none;
+}
+.content-2.toggle{
+    display: block;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 1rem 4.5rem;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+.btn.clicked{
+    background-color: orangered;
+}
