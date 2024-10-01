@@ -1,0 +1,20 @@
+const itemHeader=document.querySelectorAll('.accordian-item-header');
+
+itemHeader.forEach(accordian=>{
+    accordian.addEventListener('click',collapseAccordians);
+    function collapseAccordians(){
+        const activeAccordian=document.querySelector('.active');
+        if (activeAccordian && activeAccordian !==accordian){
+            activeAccordian.classList.toggle('.active');
+            activeAccordian.nextElementSibling.style.maxHeight=0;
+        }
+        accordian.classList.toggle('active');
+        const accordianItemBody=accordian.nextElementSibling;
+        if(accordian.classList.contains('active')){
+            accordianItemBody.style.maxHeight=accordianItemBody.scrollHeight+'px';
+        }
+        else{
+            accordianItemBody.style.maxHeight=0;
+        }
+    }
+})
