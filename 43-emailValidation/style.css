@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #242837;
+}
+.mainForm{
+    position: relative;
+    width: 38rem;
+    padding: 2.5rem;
+    background: #151a26;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainForm input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    /* border-radius: inherit; */
+    background: none;
+    font-size: 1.6rem;
+}
+.mainForm input::placeholder{
+    color: #ccc;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+form.invalid::before{
+    content: "";
+    position: absolute;
+    right: 1.4rem;
+    background: url(images/invalid.png) no-repeat center;
+    background-size: cover;
+    width: 2.2rem;
+    height:2.2rem;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+form.valid::before{
+    content: "";
+    position: absolute;
+    right: 1.4rem;
+    background: url(images/valid.png) no-repeat center;
+    background-size: cover;
+    width: 2.2rem;
+    height:2.2rem;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
