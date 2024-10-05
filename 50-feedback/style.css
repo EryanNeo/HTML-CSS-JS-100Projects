@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(26,25,25);
+    overflow: hidden;
+    margin: 0;
+}
+.panel-container{
+    background-color: #1d1c1c;
+    box-shadow: 0 0 0.8rem rgba(0,0,0,0.3);
+    border-radius: 0.4rem;
+    font-size: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    width: 70rem;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50rem;
+}
+.ratings-container{
+    display: flex;
+    margin: 2rem 0;
+}
+.rating{
+    flex:1;
+    padding: 2rem;
+    cursor: pointer;
+    margin: 1rem 0.5rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rating:hover,
+.rating.active{
+    border-radius: 0.4rem;
+    background-color: #ccc;
+    transition: 1s ease;
+}
+.rating .icon{
+    width: 4rem;
+    font-size: 5rem;
+    margin-right: 1rem;
+}
+.rating small{
+    color: white;
+    display: inline-block;
+    margin: 1rem 0 0;
+    position: relative;
+    /* left: -2.5rem; */
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+.panel-container strong{
+    font-size: 3rem;
+}
+.btn{
+    background: #fff;
+    color: #000;
+    border: 0;
+    border-radius: 0.4rem;
+    padding: 1.2rem 3rem;
+    cursor: pointer;
+    outline: 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.heart{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: red;
+}
