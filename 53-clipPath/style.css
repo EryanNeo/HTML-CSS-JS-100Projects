@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    background: #000;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: url(a.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: circle(20rem at var(--1) var(--2));
+}
