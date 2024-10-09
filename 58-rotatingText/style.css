@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    background-color: #999;
+}
+.outer-headings{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 4.5rem;
+}
+.inner-headings{
+    border: 0rem solid #ddd;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.inner-headings span{
+    position: relative;
+    color: crimson;
+    animation: animation 4s ease infinite;
+}
+/* @keyframes animation{
+    0%,100%{
+        top: 0;
+    }
+    20%{
+        top: 0;
+    }
+    25%{
+        top: -5rem;
+    }
+    45%{
+        top: -5rem;
+    }
+    50%{
+        top: -10rem;
+    }
+    70%{
+        top: -10rem;
+    }
+    75%{
+        top:-15rem;
+    }
+    95%{
+        top: -15rem;
+    }
+
+} */
+@keyframes animation{
+    0%,100%{
+        top: 0;
+    }
+    20%{
+        top: 0;
+    }
+    40%{
+        top: -5rem;
+    }
+    60%{
+        top: -10rem;
+    }
+    80%{
+        top: -15rem;
+    }
+
+}
