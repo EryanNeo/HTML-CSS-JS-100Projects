@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    margin: 10vh 10vw;
+    display: flex;
+    flex-direction: row;
+}
+.cont{
+    width: 40vw;
+    height: 50vh;
+}
+.colors{
+    outline: none;
+    border: none;
+    width: 10rem;
+    height: 10rem;
+}
+.randomColorBtn{
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
