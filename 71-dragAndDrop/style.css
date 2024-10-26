@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    background-color: rgb(14,13,13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.empty{
+    height: 20rem;
+    width: 20rem;
+    margin: 1rem;
+    border: 0.3rem solid white;
+    background-color: white;
+}
+.fill{
+    background-image: url('img3.jpg');
+    height: 19.5rem;
+    width: 19.5rem;
+    cursor: pointer;
+}
+.hover{
+    background-color: green;
+    border: 3px dashed white;
+}
+@media (max-width:880px){
+    body{
+        flex-direction: column;
+    }
+}

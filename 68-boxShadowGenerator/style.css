@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    display: grid;
+    place-items: center;
+}
+h1{
+    color: white;
+    z-index: 1;
+}
+.container{
+    display: grid;
+    place-items: center;
+    background-color: white;
+    width: 98vw;
+    height: 80vh;
+}
+#box{
+    background-color: #fff;
+    max-width: 80%;
+    height: 30rem;
+    box-shadow: 5px 10px 10px 2px #333;
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+#css-code{
+    width: 40%;
+    padding: 1rem;
+    border-radius: 0;
+    margin-top: 2rem;
+    border: none;
+    border-bottom: 1px solid;
+}
+#shadowColor{
+    width: 70%;
+    border: none;
+    margin-top: 2rem;
+}
+#copy{
+    background-color: transparent;
+    border: none;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+#copy:hover{
+    color: white;
+    background-color: crimson;
+    border: none;
+}
