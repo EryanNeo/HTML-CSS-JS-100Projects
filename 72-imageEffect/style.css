@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+}
+:root{
+    --base:#ffc600;
+    --spacing:10px;
+    --blur:2px
+}
+.container{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.controls{
+    margin-bottom: 5rem;
+}
+img{
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    width: 50vw;
+}
+input{
+    width: 10rem;
+    border: none;
+    background: transparent;
+}
