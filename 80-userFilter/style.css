@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+    --primary-color:white;
+    --primary-label:black;
+    --secondary-label:white;
+    --white-ball:white;
+    --black-ball:black;
+}
+body{
+    font-size: 1.6rem;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    width: 60rem;
+}
+.title{
+    margin-bottom: 2rem;
+}
+.header{
+    background-color: black;
+    color: white;
+    padding: 3rem 2rem;
+}
+.header input{
+    border: 0;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    outline: none;
+}
+.user-list{
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    max-height: 40rem;
+    overflow-y: auto;
+}
+.user-list li{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 2rem;
+}
+.user-list img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 6rem;
+    width: 6rem;
+    margin-right: 2rem;
+}
+.user-list .user-info h4{
+    margin: 0 0 1rem;
+}
+.user-list .user-info p{
+    font-size: 1.2rem;
+}
+.user-list li:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+.user-list li.hide{
+    display: none;
+}
+
+.toggler-container{
+    position: absolute;
+    bottom: 1rem;
+    right: 4rem;
+}
+#switch{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+label{
+    display: block;
+    width: 10rem;
+    height: 5rem;
+    background-color: var(--primary-label);
+    position: relative;
+    cursor: pointer;
+    border-radius: 10rem;
+    transition: 0.5s;
+}
+label::after{
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    border-radius: 7rem;
+    background-color: var(--white-ball);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.5s;
+}
+#switch:checked + label::after{
+    background-color: var(--black-ball);
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+#switch:checked + label{
+    background-color: var(--secondary-label);
+    border: 2px solid var(--primary-label);
+}
+label:active::after{
+    width: 60px;
+}

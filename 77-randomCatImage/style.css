@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    background-color: rgb(17,17,17);
+}
+.header-content{
+    text-align: center;
+}
+.btn{
+    border: none;
+    background: transparent;
+    background-color: rgb(216,34,74);
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+.cats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.random-cats{
+    width: 40%;
+}
+img{
+    max-width: 70rem;
+    height: 30rem;
+    color: white;
+    margin-top: 5rem;
+}

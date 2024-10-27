@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 80rem;
+}
+#display-joke{
+    font-size: 3rem;
+    text-align: center;
+}
+.btn{
+    padding: 1rem;
+    margin-top: 4rem;
+    border: none;
+    background: transparent;
+    border-bottom: 0.1rem solid crimson;
+    color: crimson;
+    text-align: start;
+}

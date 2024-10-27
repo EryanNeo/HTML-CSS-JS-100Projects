@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    background-color: rgb(28,28,28);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 5rem;
+}
+.testimonial-container{
+    background-color: rgb(19,19,19);
+    color: white;
+    padding: 5rem 8rem;
+    max-width: 80rem;
+    position: relative;
+    box-shadow: 0 2px 4px 2px rgb(19,19,19);
+}
+.testimonial{
+    line-height: 2.5rem;
+    text-align: center;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.user .user-info{
+    margin-top: 1rem;
+    text-align: center;
+}
+.user .user-name{
+    margin: 0;
+    font-size: 3rem;
+}
+.handle{
+    margin: 1rem auto;
+    color: greenyellow;
+}
+.line{
+    background: crimson;
+    height: 4px;
+    width: 100%;
+    animation: animation 10s linear infinite;
+    margin-top: 2rem;
+}
+@keyframes animation {
+    0%{
+        transform: scaleX(0);
+    }
+}
