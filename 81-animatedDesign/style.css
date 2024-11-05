@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+}
+button{
+    margin-right: -2rem;
+    padding: 1.5rem 4rem;
+    outline: none;
+    border-radius: 2.5rem;
+    background-color: #333;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+}
+.col-2 img{
+    width: 35rem;
+    height: 100vh;
+    margin-bottom: -0.5rem;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: #fff;
+}
+.col-2,
+.col-1{
+    overflow: hidden;
+}
+.col-2{
+    width: 40%;
+}
+.col-2 img{
+    width: 100%;
+}
+.col-1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 8% 5%;
+    position: relative;
+}
+.col-1 p{
+    color: #777;
+    line-height: 2.2rem;
+    margin: 1.5rem 0 3rem;
+    max-width: 50rem;
+}
+ul{
+    position: absolute;
+    bottom: 3rem;
+}
+ul li{
+    list-style: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    background-color: #bfbfbf;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+ul .active{
+    background-color: #333;
+}
+.zoom{
+    animation: zoom 1s;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
