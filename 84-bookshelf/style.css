@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+/* body{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(155, 69, 179);
+}
+.book-form{
+    width: 75vw;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+label,
+input{
+    display: block;
+    width: 100%;
+    color: white;
+    outline: none;
+}
+label{
+    padding: 0.75rem 0;
+}
+input{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+    color: black;
+}
+button{
+    color: white;
+    background-color: rgb(214, 49, 49);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+button:hover{
+    cursor: pointer;
+}
+.book-list{
+    width:75vw;
+}
+.list-header{
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    color: white;
+}
+.list-body{
+    width: 100%;
+}
+.book{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.5rem 0;
+    background-color: white;
+    border: 0.1px solid black;
+} */
+body{
+    background-color: #080809;
+    background: linear-gradient(blueviolet, rgb(82, 5, 154));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 1.6rem;
+}
+.container{
+    width: 80%;
+    height: 600px;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+input{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.table{
+    background-color: crimson;
+    width: 100%;
+}
+.table-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+#book-list{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    list-style: none;
+    overflow: hidden;
+    word-wrap: break-word;
+    background-color: white;
+    color: black;
+}
+#book-list > section{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+}
+button{
+    background-color: deeppink;
+    border: none;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
