@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 400px;
+    margin: 2.5rem;
+    padding: 2.5rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    line-height: 1.4;
+    box-shadow: 2px 1px 5px 1px;
+}
+.title{
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+}
+.text-input{
+    width: 100%;
+    height: 22.5rem;
+    margin-bottom: 2.5rem;
+    resize: none;
+    padding: 1rem;
+    box-sizing: border-box;
+}
