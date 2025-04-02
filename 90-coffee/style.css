@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+    --main-color: #deab5f;
+    --primarty-color: #312e2e;
+}
+button{
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+body{
+    background: #100e0f;
+}
+/* ***********************************   nav starts ********************************/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+li{
+    display: inline;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 4rem;
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+}
+li a:hover{
+    border-bottom: 0.1rem solid var(--main-color);
+}
+nav .logo{
+    font-size: 2rem;
+}
+
+/* ***********************************   nav ends ********************************/
+
+/* ********************************    header starts ********************************/
+.header{
+    background: url(Images/pexels-nao-triponez-129207.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.main-heading{
+    position: absolute;
+    top: 7rem;
+    font-size: 4rem;
+    word-spacing: 1rem;
+    /* margin-bottom: -4rem; */
+}
+.primary-heading{
+    position: absolute;
+    bottom: 4rem;
+    font-size: 4rem;
+    word-spacing: 1rem;
+    margin-bottom: 4rem;
+}
+.main-btn{
+    position: absolute;
+    bottom: 2rem;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    background: transparent;
+    background: var(--main-color);
+    border: none;
+    transform: translateY(6rem);
+    cursor: pointer;
+}
+/* ********************************    header ends ********************************/
+/* ********************************    section starts ********************************/
+#our-story{
+    /* height: 100vh; */
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.img{
+    width: 40rem;
+    height: 40rem;
+    background: url(Images/pexels-chitokan-2183027-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+.title-style{
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-size: 4rem;
+    color: white;
+    transform: translateX(-10rem);
+}
+.line{
+    width: 10rem;
+    height: 0.2rem;
+    background: white;
+    transform: translateX(-12rem);
+}
+.section-content p{
+    max-width: 50rem;
+    color: white;
+    line-height: 2rem;
+    margin: 2rem 0;
+    font-size: 1.7rem;
+}
+/* ********************************    section ends ********************************/
+/* ********************************    coffee container starts ********************************/
+.coffee-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+.img-2{
+    width: 40rem;
+    height: 40rem;
+}
+.content-section p{
+    max-width: 50rem;
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 1.7rem;
+}
+.title-two{
+    font-size: 3rem;
+    color: #fff;
+}
+/* ********************************    coffee container ends ********************************/
+/* *************************   products starts  ***************************************** */
+.products{
+    margin-top: 5rem;
+}
+.title-three{
+    font-size: 4rem;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    transform: translateX(10rem);
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    border: 2px solid var(--main-color);
+    padding: 0 2rem;
+    height: 40rem;
+    width: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.card-img{
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: -6rem;
+    /* border: 2px solid var(--main-color); */
+}
+.img-one{
+    background: url(Images/1.png);
+    background-position: center;
+    background-size: cover;
+}
+.img-two{
+    background: url(Images/2.png);
+    background-position: center;
+    background-size: cover;
+}
+.img-three{
+    background: url(Images/3.png);
+    background-position: center;
+    background-size: cover;
+}
+.card-title{
+    color: #fff;
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+.card .items p{
+    color: #fff;
+    margin: 2rem 0;
+    font-size: 1.7rem;
+}
+/* *************************   products ends  ***************************************** */
+/* *************************   footer starts  ***************************************** */
+footer{
+    height: 50vh;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+footer .container{
+    margin: 2rem;
+    max-width: 30rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+footer p{
+    line-height: 2.5rem;
+}
+span{
+    color: var(--main-color);
+}
+hr{
+    margin-bottom: 2rem;
+    border-color: var(--main-color);
+    width: 85vw;
+    margin: 0 auto;
+}
+.para{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* *************************   footer ends  ***************************************** */
+/* ************* Responsiveness *************** */
+@media only screen and (max-width: 768px){
+    .main-heading, .primary-heading{
+        font-size: 2.5rem;
+    }
+    #our-story{
+        text-align: center;
+    }
+    #our-story .title{
+        transform: translateX(5rem);
+    }
+    #our-story .line{
+        display: none;
+    }
+    .content-section{
+        text-align: center;
+    }
+    #our-story .img-container .img{
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .coffee-container .img-container{
+        margin-top: 5rem;
+        width: 50%;
+    }
+    .title-two{
+        /* border: 1rem solid red; */
+        margin: 0 auto;
+    }
+    .title{
+        margin: 0 auto;
+    }
+    .title-three{
+        /* margin: 20px; */
+        display: none;
+    }
+    .para{
+        display: none;
+    }
+}
+/* ************************************************************************************************* */
