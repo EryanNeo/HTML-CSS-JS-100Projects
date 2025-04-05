@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    background: rgb(144, 195, 200);
+    margin: 1rem;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+.wrapper-container{
+    background-color: #ebeae9;
+}
+/* *******************   nav starts   ************************* */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+nav ul{
+    list-style-type: none;
+    margin-left: 5rem;
+}
+li a{
+    text-decoration: none;
+    font-size: 2rem;
+}
+nav .burger{
+    margin-right: 5rem;
+    cursor: pointer;
+}
+nav .burger span{
+    height: 0.4rem;
+    border: 0.2rem solid black;
+    margin: 0.4rem;
+    background: #000;
+}
+/* *******************   nav ends   ************************* */
+/* *******************   header starts   ************************* */
+header{
+    margin: 6rem;
+}
+.main-heading{
+    width: 50%;
+    font-size: 3rem;
+}
+.primary-heading{
+    width: 50%;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.bg-gray{
+    background: #242424;
+    color: white;
+    padding: 0.2rem 1rem;
+    font-weight: bold;
+}
+/* *******************   header ends   ************************* */
+/* *******************   main starts   ************************* */
+main{
+    margin: 0 4rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin: 4rem;
+}
+main .img{
+    width: 10%;
+    margin: 1rem;
+}
+
+/* *******************   main ends   ************************* */
+/* *******************   section-three starts   ************************* */
+.section-three{
+    margin-left: 5rem;
+}
+.section-three .primary-heading{
+    margin-bottom: 10rem;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section-three img{
+    width: 40rem;
+    height: 50rem;
+    margin: 5rem;
+}
+.section-three .item h1{
+    font-size: 2rem;
+    color: rgb(53,53,53);
+}
+
+/* *******************   section-three ends   ************************* */
+/* *******************   footer starts   ************************* */
+footer{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50vh;
+    color: white;
+    background-color: rgb(144,195,200);
+    /* flex-direction: column; */
+}
+footer .logo-container h1{
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2rem;
+}
+footer .logo-container p{
+    max-width: 40rem;
+    line-height: 2.5rem;
+}
+footer .about-company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .about-company .container{
+    margin-right: 4rem;
+    margin-top: 2rem;
+}
+.about-company .container h1{
+    margin-bottom: 5rem;
+}
+.about-company .container p{
+    margin-bottom: 2rem;
+}
+/* *******************   footer ends   ************************* */
+/* *******************   responsiveness starts   ************************* */
+@media screen and (max-width:740px) {
+    header .main-heading{
+        width: 100%;
+    }
+    header .primary-heading{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .section-three .main-heading{
+        width: 100%;
+    }
+    .section-three .primary-heading{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .section-three img{
+        margin: 0;
+    }
+}
+
+/* *******************   responsiveness ends   ************************* */
