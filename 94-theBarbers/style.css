@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+    --main-color: #37132d;
+    --primary-font: serif;
+    --secondary-font: sans-serif;
+}
+/* ******************** nav starts ********************* */
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgb(75, 67, 67); */
+    padding: 3rem;
+    font-size: 2rem;
+}
+ul li{
+    list-style: none;
+    display: inline;
+}
+ul li a{
+    text-decoration: none;
+    margin: 1rem;
+    color: black;
+    font-family: var(--secondary-font);
+}
+ul li a:hover{
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid green;
+}
+/* ******************** nav ends ********************* */
+
+/* ******************** section one starts ********************* */
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+.header-content{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    width: 40%;
+    flex-direction: column;
+    /* text-align: left; */
+}
+.header-heading{
+    font-size: 4rem;
+    font-family: var(--primary-font);
+}
+.header-sub-heading{
+    width: 70%;
+    font-family: var(--secondary-font);
+    color: rgb(82, 82, 82);
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+.header-img-container{
+    width: 30%;
+    height: 50vh;
+    position: relative;
+}
+.header-img{
+    width: 20rem;
+    height: 30rem;
+}
+.img-one{
+    position: absolute;
+    left: 10rem;
+}
+.img-two{
+    position: absolute;
+    left: 30rem;
+    top: -8rem;
+}
+.main-btn{
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background: var(--main-color);
+    color: white;
+    font-family: var(--secondary-font);
+    cursor: pointer;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+/* ******************** section one ends ********************* */
+
+/* ******************** section experience starts ********************* */
+.experience{
+    height: 90vh;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+.experience-img-container{
+    background: url("Images/img-1.png");
+    background-size: cover;
+    width: 30rem;
+    height: 35rem;
+    margin-left: 5rem;
+}
+.gray-heading{
+    color: gray;
+    font-family: var(--primary-font);
+}
+.btn-container{
+    margin-top: 3rem;
+}
+/* ******************** section experience ends ********************* */
+
+/* ******************** section social-media starts ********************* */
+.social-media{
+    margin: 5rem;
+}
+.sm-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 1.5rem;
+}
+.follow{
+    padding: 2rem;
+    background-color: var(--main-color);
+    color: white;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    margin-right: 3rem;
+    text-align: center;
+}
+/* ******************** section social-media ends ********************* */
+
+/* ******************** section hero starts ********************* */
+.hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hero-img-container{
+    background: url(Images/img-2.png);
+    background-size: cover;
+    background-position: top;
+    width: 30rem;
+    height: 40rem;
+}
+.hero-sub-heading{
+    width: 40rem;
+}
+.hero-content{
+    margin-left: 6rem;
+}
+/* ******************** section hero ends ********************* */
+
+/* ******************** section services starts ********************* */
+.services{
+    margin-top: 10rem;
+}
+.services-heading{
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 30rem;
+    height: 40rem;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px rgb(223, 223, 223);
+    margin: 2rem;
+}
+.card-img{
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: top;
+}
+.img-1{
+    background-image: url(Images/img-1.png);
+}
+.img-2{
+    background-image: url(Images/img-1.png);
+}
+.img-3{
+    background-image: url(Images/img-1.png);
+}
+.img-4{
+    background-image: url(Images/img-1.png);
+}
+.card-content{
+    transform: translateY(20rem);
+    text-align: center;
+    margin: 1rem;
+}
+.card-title{
+    font-family: var(--secondary-font);
+    margin-bottom: 2rem;
+    color: black;
+    font-size: 1.5rem;
+}
+.card-info{
+    font-family: var(--secondary-font);
+    text-align: center;
+    color: rgb(109, 109, 109);
+    margin: 3rem 4rem;
+    font-size: 1.3rem;
+}
+/* ******************** section services ends ********************* */
+
+/* ******************** footer starts ********************* */
+.footer{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 50vh;
+    margin: 10rem;
+}
+.footer-card-title{
+    font-family: var(--primary-font);
+}
+.footer-card-info{
+    font-family: var(--secondary-font);
+    line-height: 2rem;
+}
+/* ******************** footer ends ********************* */
+
+/* ******************** responsiveness starts ********************* */
+@media only screen and (max-width: 600px){
+    .header-content{
+        align-items: center;
+        text-align: center;
+        width: 70%;
+    }
+    .header-img-container{
+        display: none;
+    }
+    .experience{
+        height: 100vh;
+        margin: 0 auto;
+    }
+    .experience-heading{
+        font-size: 3rem;
+    }
+    .experience-sub-heading{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .experience-img{
+        width: 20rem;
+        height: 30rem;
+    }
+    .btn-container{
+        margin-top: 3rem;
+        margin-bottom: 3.5rem;
+    }
+    .follow{
+        display: none;
+    }
+    .sm-container{
+        flex-direction: column;
+    }
+    .list-items{
+        margin: 1rem;
+    }
+    .hero-sub-heading{
+        font-size: 3rem;
+    }
+    .hero-content{
+        margin: 0 auto;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
+/* ******************** responsiveness ends ********************* */
