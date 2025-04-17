@@ -3,11 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Git Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../data/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../data/fontawesome-free-6.5.2-web/css/fontawesome.min.css">
     <script src="app.js" defer></script>
 </head>
 <body>
-    
+    <nav>
+        <i class="fa-brands fa-github"></i>
+        <section class="nav-container">
+            <ul>
+                <li><a href="">Product <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="">Open Source</a></li>
+                <li><a href="">Pricing</a></li>
+            </ul>
+            <form action="">
+                <input type="text" placeholder="Search">
+            </form>
+            <div class="btns-container">
+                <a href="">Sign In</a>
+                <button>Sign Up</button>
+            </div>
+        </section>
+    </nav>
+    <header>
+        <ul>
+            <li><a href="" class="active"><i class="fa-solid fa-book-open"></i>Overview</a></li>
+            <li><a href="" class=""><i class="fa-solid fa-folder"></i>Repositories</a></li>
+            <li><a href="" class=""><i class="fa-solid fa-cloud"></i>Projects</a></li>
+            <li><a href="" class=""><i class="fa-solid fa-cube"></i>Packages</a></li>
+            <li><a href="" class=""><i class="fa-solid fa-star"></i>Stars</a></li>
+        </ul>
+    </header>
+    <section class="main-container">
+        <section class="about-user">
+            <div class="user-avatar"></div>
+            <p class="user-name">Aryan Kumar</p>
+            <button class="follow">Follow</button>
+            <p class="user-bio">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, nulla!</p>
+            <div class="followers-info">
+                <a href=""><i class="fa-solid fa-person"></i>
+                <span class="followers">21</span>followers</a>
+                <a href=""><span class="following">0</span></a>
+            </div>
+            <div class="icon-container">
+                <i class="fa-regular fa-building"></i>
+                <a href="" class="company">https://www.udemy.com/user/huxn-webdev</a>
+            </div>
+            <div class="icon-container">
+                <i class="fa-sharp fa-solid fa-link"></i>
+                <a href="" class="location">United States</a>
+            </div>
+            <div class="icon-container">
+                <i class="fa-sharp fa-solid fa-link"></i>
+                <a href="" class="blog">https://www.youtube.com/@huxn-webdev</a>
+            </div>
+        </section>
+        <main>
+            <p>Popular Repositories</p>
+            <div class="repos">
+                <div class="repo-card">
+                    <a href="" class="repo-title">HTML-CSS-Javascript 100 Projects</a>
+                    <p class="repo-subtitle">Build 100+ projects in 100 days</p>
+                    <div class="popularity">
+                        <p class="technology-used">HTML</p>
+                        <div class="stars"><i class="fa-regular fa-star">106</i></div>
+                    </div>
+                    <div class="fork">
+                        <div class="svg"><img src="./git-fork_1.svg" alt=""></div>
+                        <span class="forked">20</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
 </body>
 </html>
