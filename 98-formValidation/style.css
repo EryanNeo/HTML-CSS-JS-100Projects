@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+    --main-color: #161a1d;
+    --primary-color: #7289da;
+    --gray-color: #4f4f4f;
+}
+body{
+    background-color: var(--main-color);
+}
+form{
+    border: 2px solid rgba(255, 255, 255,0.224);
+    border-radius: 5px;
+    width: 30%;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1.2;
+    margin-left: 6rem;
+    margin-top: 5rem;
+}
+form input{
+    padding: 0.6rem;
+    width: 23rem;
+    outline: none;
+}
+input[type = 'submit']{
+    width: 23rem;
+    background: var(--primary-color);
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+.already{
+    margin-top: 2rem;
+}
+img{
+    width: 51%;
+    height: 55rem;
+    position: absolute;
+    top: -8rem;
+    right: 10%;
+}
+form p{
+    font-size: 1.4rem;
+    color: white;
+}
+.input-container p.msg{
+    visibility: hidden;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.input-container.error p.msg{
+    visibility: visible;
+}
+.content h1{
+    position: absolute;
+    top: 45%;
+    right: 38%;
+    font-size: 5rem;
+    color: white;
+}
+.input-container.error input{
+    border-color: red;
+}
+.input-container.success input{
+    border-color: rgb(97, 249, 97);
+}
